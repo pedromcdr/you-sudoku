@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — YouSudoku</title>
+<meta name="description" content="Learn about YouSudoku — a free online Sudoku game designed for puzzle lovers of all levels. Our mission is to make brain training fun and accessible for everyone.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.yoursite.com/about/">
+<link rel="alternate" hreflang="en" href="https://www.yoursite.com/about/?lang=en">
+<link rel="alternate" hreflang="fr" href="https://www.yoursite.com/about/?lang=fr">
+<link rel="alternate" hreflang="de" href="https://www.yoursite.com/about/?lang=de">
+<link rel="alternate" hreflang="pt" href="https://www.yoursite.com/about/?lang=pt">
+<link rel="alternate" hreflang="es" href="https://www.yoursite.com/about/?lang=es">
+<link rel="alternate" hreflang="it" href="https://www.yoursite.com/about/?lang=it">
+<link rel="alternate" hreflang="x-default" href="https://www.yoursite.com/about/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About Us — YouSudoku">
+<meta property="og:description" content="Learn about YouSudoku — free online Sudoku for everyone.">
+<meta property="og:url" content="https://www.yoursite.com/about/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AboutPage","name":"About YouSudoku","url":"https://www.yoursite.com/about/","description":"Learn about YouSudoku, a free online Sudoku platform.","publisher":{"@type":"Organization","name":"YouSudoku","url":"https://www.yoursite.com"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#F8F7F3;--surface:#FFFFFF;--bl:#E2E0D8;--bm:#B0ADA4;--bd:#26231E;--t1:#1A1714;--t2:#6B6760;--t3:#A8A5A0;--acc:#A0722A;--acc-lt:#FFF3D4}
+body{font-family:'DM Mono',monospace;background:var(--bg);color:var(--t1);min-height:100vh;padding:2rem 1rem 4rem}
+.wrap{max-width:760px;margin:0 auto}
+header{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid var(--bl)}
+.logo{font-family:'Playfair Display',serif;font-size:38px;font-weight:400;letter-spacing:-1.5px;line-height:1;text-decoration:none;color:var(--t1)}
+.logo span{color:var(--acc)}
+.logo-sub{font-size:11px;color:var(--t3);text-transform:uppercase;letter-spacing:0.12em;margin-top:5px}
+.header-right{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.langs{display:flex;gap:2px;background:var(--surface);border:1px solid var(--bl);border-radius:6px;padding:3px}
+.lb{font-family:'DM Mono',monospace;font-size:11px;font-weight:500;padding:3px 7px;border:none;border-radius:4px;background:transparent;color:var(--t3);cursor:pointer;letter-spacing:0.04em;transition:all 0.1s}
+.lb:hover{background:var(--bg);color:var(--t2)}
+.lb.on{background:var(--t1);color:#fff}
+.btn{font-family:'DM Mono',monospace;font-size:13px;padding:7px 13px;border:1px solid var(--bl);border-radius:6px;background:var(--surface);color:var(--t1);cursor:pointer;transition:all 0.1s;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{border-color:var(--bm);background:var(--bg)}
+.btn-primary{background:var(--t1);color:#fff;border-color:var(--t1)}
+.btn-primary:hover{background:#333;border-color:#333}
+/* PAGE */
+.page-hero{margin-bottom:2.5rem}
+.page-hero h1{font-family:'Playfair Display',serif;font-size:36px;font-weight:400;letter-spacing:-1px;margin-bottom:0.75rem}
+.page-hero p{font-size:15px;line-height:1.8;color:var(--t2)}
+.section{margin-bottom:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid var(--bl)}
+.section:last-of-type{border-bottom:none}
+.section h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:400;margin-bottom:0.75rem}
+.section p{font-size:14px;line-height:1.8;color:var(--t2);margin-bottom:0.9rem}
+.section p:last-child{margin-bottom:0}
+.values{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1rem}
+.val-card{background:var(--surface);border:1px solid var(--bl);border-radius:8px;padding:1.25rem}
+.val-card .icon{font-size:22px;margin-bottom:0.5rem}
+.val-card h3{font-size:13px;font-weight:500;margin-bottom:0.4rem}
+.val-card p{font-size:13px;color:var(--t2);line-height:1.6;margin:0}
+/* FOOTER */
+footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--bl);display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between}
+.footer-links{display:flex;gap:1rem;flex-wrap:wrap}
+.footer-links a{font-size:12px;color:var(--t3);text-decoration:none;transition:color 0.1s}
+.footer-links a:hover{color:var(--t1)}
+.footer-copy{font-size:12px;color:var(--t3)}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EQPN0HF8JM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-EQPN0HF8JM');
+</script>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="shortcut icon" href="favicon.png">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div>
+    <a href="index.html" class="logo">You<span>Su</span>doku</a>
+    <div class="logo-sub" id="ui-subtitle">Classic number puzzle</div>
+  </div>
+  <div class="header-right">
+    <div class="langs" role="navigation" aria-label="Language">
+      <button class="lb on" onclick="setLang('en',this)">EN</button>
+      <button class="lb" onclick="setLang('fr',this)">FR</button>
+      <button class="lb" onclick="setLang('de',this)">DE</button>
+      <button class="lb" onclick="setLang('pt',this)">PT</button>
+      <button class="lb" onclick="setLang('es',this)">ES</button>
+      <button class="lb" onclick="setLang('it',this)">IT</button>
+    </div>
+    <a href="index.html" class="btn btn-primary" id="ui-play-btn">▶ Play</a>
+  </div>
+</header>
+
+<div class="page-hero">
+  <h1 id="hero-title">About YouSudoku</h1>
+  <p id="hero-intro">We believe that great puzzles should be free, fast, and frustration-free. YouSudoku was built with one goal in mind: to give everyone on the planet access to a clean, distraction-free Sudoku experience.</p>
+</div>
+
+<div class="section">
+  <h2 id="s1-title">Who We Are</h2>
+  <p id="s1-p1">YouSudoku is an independent puzzle platform created by a small team of developers and puzzle enthusiasts. We have no venture funding, no advertising partners, and no hidden agenda — just a genuine love for logic puzzles and clean design.</p>
+  <p id="s1-p2">We launched YouSudoku because we were frustrated with Sudoku sites cluttered with ads, pop-ups, and mandatory sign-ups. We wanted something better — so we built it.</p>
+</div>
+
+<div class="section">
+  <h2 id="s2-title">Our Mission</h2>
+  <p id="s2-p1">Our mission is simple: make the world's best free Sudoku game, accessible in as many languages as possible, on every device. No paywalls, no accounts, no data harvesting — just puzzles.</p>
+  <p id="s2-p2">Every puzzle on YouSudoku is computer-generated with a unique solution and tested for quality at each difficulty level. Easy, Medium, and Hard — all solvable through pure logic.</p>
+</div>
+
+<div class="section">
+  <h2 id="s3-title">Our Values</h2>
+  <div class="values">
+    <div class="val-card">
+      <div class="icon">🆓</div>
+      <h3 id="v1-title">Free Forever</h3>
+      <p id="v1-text">YouSudoku is and always will be completely free to play. No subscriptions, no premium tiers.</p>
+    </div>
+    <div class="val-card">
+      <div class="icon">🔒</div>
+      <h3 id="v2-title">Privacy First</h3>
+      <p id="v2-text">We do not collect personal data, sell information, or require any account to play.</p>
+    </div>
+    <div class="val-card">
+      <div class="icon">🌍</div>
+      <h3 id="v3-title">Multilingual</h3>
+      <p id="v3-text">Available in English, French, German, Portuguese, Spanish, and Italian — with more languages coming.</p>
+    </div>
+    <div class="val-card">
+      <div class="icon">📱</div>
+      <h3 id="v4-title">Every Device</h3>
+      <p id="v4-text">Designed to work perfectly on phones, tablets, and desktops — no app download required.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2 id="s4-title">Contact Us</h2>
+  <p id="s4-p1">Have a suggestion, found a bug, or just want to say hello? We would love to hear from you.</p>
+  <p id="s4-p2">📧 <a href="mailto:hello@yoursite.com" style="color:var(--acc)">hello@yoursite.com</a></p>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html" id="footer-game">Play Sudoku</a>
+    <a href="about.html" id="footer-about">About Us</a>
+    <a href="privacy.html" id="footer-privacy">Privacy Policy</a>
+    <a href="terms.html" id="footer-terms">Terms &amp; Conditions</a>
+  </div>
+  <div class="footer-copy">© 2026 YouSudoku</div>
+</footer>
+
+</div>
+<script>
+var lang = 'en';
+var TR = {
+  en:{
+    subtitle:'Classic number puzzle', play:'▶ Play',
+    heroTitle:'About YouSudoku',
+    heroIntro:'We believe that great puzzles should be free, fast, and frustration-free. YouSudoku was built with one goal: to give everyone access to a clean, distraction-free Sudoku experience.',
+    s1Title:'Who We Are',
+    s1p1:'YouSudoku is an independent puzzle platform created by a small team of developers and puzzle enthusiasts. No venture funding, no advertising partners — just a genuine love for logic puzzles and clean design.',
+    s1p2:'We launched YouSudoku because we were frustrated with Sudoku sites cluttered with ads, pop-ups, and mandatory sign-ups. We wanted something better — so we built it.',
+    s2Title:'Our Mission',
+    s2p1:'Our mission is simple: make the world\'s best free Sudoku game, accessible in as many languages as possible, on every device. No paywalls, no accounts, no data harvesting — just puzzles.',
+    s2p2:'Every puzzle is computer-generated with a unique solution and tested for quality at each difficulty level.',
+    s3Title:'Our Values',
+    v1Title:'Free Forever', v1Text:'YouSudoku is and always will be completely free to play. No subscriptions, no premium tiers.',
+    v2Title:'Privacy First', v2Text:'We do not collect personal data, sell information, or require any account to play.',
+    v3Title:'Multilingual', v3Text:'Available in English, French, German, Portuguese, Spanish, and Italian — with more coming.',
+    v4Title:'Every Device', v4Text:'Designed to work perfectly on phones, tablets, and desktops — no app download required.',
+    s4Title:'Contact Us',
+    s4p1:'Have a suggestion, found a bug, or just want to say hello? We would love to hear from you.',
+    s4p2:'📧 hello@yoursite.com',
+    footerGame:'Play Sudoku', footerAbout:'About Us', footerPrivacy:'Privacy Policy', footerTerms:'Terms & Conditions'
+  },
+  fr:{
+    subtitle:'Puzzle numérique classique', play:'▶ Jouer',
+    heroTitle:'À propos de YouSudoku',
+    heroIntro:'Nous croyons que les bons puzzles doivent être gratuits, rapides et sans frustration. YouSudoku a été créé avec un seul objectif : offrir à chacun une expérience Sudoku propre et sans distraction.',
+    s1Title:'Qui sommes-nous',
+    s1p1:'YouSudoku est une plateforme de puzzles indépendante créée par une petite équipe de développeurs et passionnés de puzzles. Pas de financement externe, pas de partenaires publicitaires — juste un amour sincère des puzzles logiques.',
+    s1p2:'Nous avons lancé YouSudoku parce que nous en avions assez des sites Sudoku encombrés de publicités et de fenêtres pop-up. Nous voulions mieux — alors nous l\'avons créé.',
+    s2Title:'Notre mission',
+    s2p1:'Notre mission est simple : créer le meilleur jeu de Sudoku gratuit au monde, accessible dans un maximum de langues, sur chaque appareil. Pas de barrières, pas de comptes, pas de collecte de données — juste des puzzles.',
+    s2p2:'Chaque puzzle est généré par ordinateur avec une solution unique et testé pour la qualité à chaque niveau de difficulté.',
+    s3Title:'Nos valeurs',
+    v1Title:'Gratuit pour toujours', v1Text:'YouSudoku est et sera toujours entièrement gratuit. Pas d\'abonnements, pas d\'offres premium.',
+    v2Title:'Vie privée d\'abord', v2Text:'Nous ne collectons pas de données personnelles, ne vendons pas d\'informations et ne demandons aucun compte pour jouer.',
+    v3Title:'Multilingue', v3Text:'Disponible en anglais, français, allemand, portugais, espagnol et italien — avec d\'autres langues à venir.',
+    v4Title:'Tous les appareils', v4Text:'Conçu pour fonctionner parfaitement sur téléphones, tablettes et ordinateurs — sans téléchargement.',
+    s4Title:'Contactez-nous',
+    s4p1:'Vous avez une suggestion, trouvé un bug ou voulez juste dire bonjour ? Nous serions ravis de vous entendre.',
+    s4p2:'📧 hello@yoursite.com',
+    footerGame:'Jouer au Sudoku', footerAbout:'À propos', footerPrivacy:'Politique de confidentialité', footerTerms:'Conditions générales'
+  },
+  de:{
+    subtitle:'Klassisches Zahlenrätsel', play:'▶ Spielen',
+    heroTitle:'Über YouSudoku',
+    heroIntro:'Wir glauben, dass großartige Rätsel kostenlos, schnell und frustrationsfrei sein sollten. YouSudoku wurde mit einem einzigen Ziel entwickelt: jedem eine saubere, ablenkungsfreie Sudoku-Erfahrung zu bieten.',
+    s1Title:'Wer wir sind',
+    s1p1:'YouSudoku ist eine unabhängige Rätselplattform, die von einem kleinen Team aus Entwicklern und Rätselbegeisterten erstellt wurde. Keine Risikokapitalfinanzierung, keine Werbepartner — nur echte Leidenschaft für Logikrätsel.',
+    s1p2:'Wir haben YouSudoku gestartet, weil wir von Sudoku-Seiten mit Werbung und Pop-ups frustriert waren. Wir wollten etwas Besseres — also haben wir es gebaut.',
+    s2Title:'Unsere Mission',
+    s2p1:'Unsere Mission ist einfach: das beste kostenlose Sudoku-Spiel der Welt zu schaffen, in möglichst vielen Sprachen, auf jedem Gerät. Keine Bezahlschranken, keine Konten, keine Datensammlung — nur Rätsel.',
+    s2p2:'Jedes Rätsel wird vom Computer generiert, hat eine eindeutige Lösung und wird für jeden Schwierigkeitsgrad auf Qualität geprüft.',
+    s3Title:'Unsere Werte',
+    v1Title:'Für immer kostenlos', v1Text:'YouSudoku ist und bleibt vollständig kostenlos. Keine Abonnements, keine Premium-Stufen.',
+    v2Title:'Datenschutz zuerst', v2Text:'Wir erfassen keine personenbezogenen Daten, verkaufen keine Informationen und benötigen kein Konto zum Spielen.',
+    v3Title:'Mehrsprachig', v3Text:'Verfügbar auf Englisch, Französisch, Deutsch, Portugiesisch, Spanisch und Italienisch — weitere Sprachen folgen.',
+    v4Title:'Jedes Gerät', v4Text:'Perfekt für Smartphones, Tablets und Desktops — kein App-Download erforderlich.',
+    s4Title:'Kontakt',
+    s4p1:'Haben Sie einen Vorschlag, einen Fehler gefunden oder möchten Sie einfach Hallo sagen? Wir freuen uns von Ihnen zu hören.',
+    s4p2:'📧 hello@yoursite.com',
+    footerGame:'Sudoku spielen', footerAbout:'Über uns', footerPrivacy:'Datenschutz', footerTerms:'AGB'
+  },
+  pt:{
+    subtitle:'Puzzle numérico clássico', play:'▶ Jogar',
+    heroTitle:'Sobre o YouSudoku',
+    heroIntro:'Acreditamos que os melhores puzzles devem ser gratuitos, rápidos e sem frustração. O YouSudoku foi criado com um único objetivo: dar a todos acesso a uma experiência de Sudoku limpa e sem distrações.',
+    s1Title:'Quem Somos',
+    s1p1:'O YouSudoku é uma plataforma de puzzles independente criada por uma pequena equipa de programadores e entusiastas de puzzles. Sem financiamento externo, sem parceiros publicitários — apenas amor genuíno pelos puzzles lógicos.',
+    s1p2:'Lançámos o YouSudoku porque estávamos fartos de sites de Sudoku cheios de anúncios e pop-ups. Queríamos algo melhor — por isso criámos.',
+    s2Title:'A Nossa Missão',
+    s2p1:'A nossa missão é simples: criar o melhor jogo de Sudoku gratuito do mundo, acessível no maior número possível de idiomas, em qualquer dispositivo. Sem barreiras, sem contas, sem recolha de dados — apenas puzzles.',
+    s2p2:'Cada puzzle é gerado por computador com uma solução única e testado para qualidade em cada nível de dificuldade.',
+    s3Title:'Os Nossos Valores',
+    v1Title:'Sempre Gratuito', v1Text:'O YouSudoku é e será sempre completamente gratuito. Sem subscrições, sem planos premium.',
+    v2Title:'Privacidade em Primeiro', v2Text:'Não recolhemos dados pessoais, não vendemos informações e não exigimos qualquer conta para jogar.',
+    v3Title:'Multilingue', v3Text:'Disponível em inglês, francês, alemão, português, espanhol e italiano — com mais idiomas a caminho.',
+    v4Title:'Todos os Dispositivos', v4Text:'Concebido para funcionar perfeitamente em telemóveis, tablets e computadores — sem download.',
+    s4Title:'Contacte-nos',
+    s4p1:'Tem uma sugestão, encontrou um erro ou quer simplesmente dizer olá? Adoraríamos ouvir-te.',
+    s4p2:'📧 hello@yoursite.com',
+    footerGame:'Jogar Sudoku', footerAbout:'Sobre Nós', footerPrivacy:'Política de Privacidade', footerTerms:'Termos e Condições'
+  },
+  es:{
+    subtitle:'Puzzle numérico clásico', play:'▶ Jugar',
+    heroTitle:'Sobre YouSudoku',
+    heroIntro:'Creemos que los mejores puzzles deben ser gratuitos, rápidos y sin frustraciones. YouSudoku fue creado con un único objetivo: dar a todos acceso a una experiencia de Sudoku limpia y sin distracciones.',
+    s1Title:'Quiénes Somos',
+    s1p1:'YouSudoku es una plataforma de puzzles independiente creada por un pequeño equipo de desarrolladores y entusiastas de los puzzles. Sin financiación externa, sin socios publicitarios — solo amor genuino por los puzzles lógicos.',
+    s1p2:'Lanzamos YouSudoku porque estábamos hartos de los sitios de Sudoku llenos de anuncios y ventanas emergentes. Queríamos algo mejor — así que lo construimos.',
+    s2Title:'Nuestra Misión',
+    s2p1:'Nuestra misión es simple: crear el mejor juego de Sudoku gratuito del mundo, accesible en el mayor número de idiomas posible, en cualquier dispositivo. Sin barreras, sin cuentas, sin recopilación de datos — solo puzzles.',
+    s2p2:'Cada puzzle es generado por ordenador con una solución única y probado en cada nivel de dificultad.',
+    s3Title:'Nuestros Valores',
+    v1Title:'Gratis para Siempre', v1Text:'YouSudoku es y siempre será completamente gratuito. Sin suscripciones, sin niveles premium.',
+    v2Title:'Privacidad Primero', v2Text:'No recopilamos datos personales, no vendemos información y no requerimos ninguna cuenta para jugar.',
+    v3Title:'Multilingüe', v3Text:'Disponible en inglés, francés, alemán, portugués, español e italiano — con más idiomas próximamente.',
+    v4Title:'Todos los Dispositivos', v4Text:'Diseñado para funcionar perfectamente en móviles, tablets y ordenadores — sin descargas.',
+    s4Title:'Contáctanos',
+    s4p1:'¿Tienes una sugerencia, encontraste un error o simplemente quieres saludar? Nos encantaría saber de ti.',
+    s4p2:'📧 hello@yoursite.com',
+    footerGame:'Jugar al Sudoku', footerAbout:'Sobre Nosotros', footerPrivacy:'Política de Privacidad', footerTerms:'Términos y Condiciones'
+  },
+  it:{
+    subtitle:'Puzzle numerico classico', play:'▶ Gioca',
+    heroTitle:'Chi Siamo — YouSudoku',
+    heroIntro:'Crediamo che i migliori puzzle debbano essere gratuiti, veloci e senza frustrazioni. YouSudoku è stato creato con un unico obiettivo: offrire a tutti un\'esperienza Sudoku pulita e senza distrazioni.',
+    s1Title:'Chi Siamo',
+    s1p1:'YouSudoku è una piattaforma di puzzle indipendente creata da un piccolo team di sviluppatori e appassionati di puzzle. Nessun finanziamento esterno, nessun partner pubblicitario — solo autentica passione per i puzzle logici.',
+    s1p2:'Abbiamo lanciato YouSudoku perché eravamo stanchi dei siti Sudoku pieni di pubblicità e pop-up. Volevamo qualcosa di meglio — così l\'abbiamo costruito.',
+    s2Title:'La Nostra Missione',
+    s2p1:'La nostra missione è semplice: creare il miglior gioco Sudoku gratuito al mondo, accessibile nel maggior numero di lingue possibile, su ogni dispositivo. Nessun paywall, nessun account, nessuna raccolta dati — solo puzzle.',
+    s2p2:'Ogni puzzle è generato dal computer con una soluzione unica e testato per la qualità a ogni livello di difficoltà.',
+    s3Title:'I Nostri Valori',
+    v1Title:'Gratis per Sempre', v1Text:'YouSudoku è e sarà sempre completamente gratuito. Nessun abbonamento, nessun piano premium.',
+    v2Title:'Privacy Prima di Tutto', v2Text:'Non raccogliamo dati personali, non vendiamo informazioni e non richiedinamo alcun account per giocare.',
+    v3Title:'Multilingue', v3Text:'Disponibile in inglese, francese, tedesco, portoghese, spagnolo e italiano — con altre lingue in arrivo.',
+    v4Title:'Ogni Dispositivo', v4Text:'Progettato per funzionare perfettamente su telefoni, tablet e computer — nessun download richiesto.',
+    s4Title:'Contattaci',
+    s4p1:'Hai un suggerimento, trovato un bug o vuoi semplicemente salutare? Ci farebbe piacere sentirti.',
+    s4p2:'📧 hello@yoursite.com',
+    footerGame:'Gioca a Sudoku', footerAbout:'Chi Siamo', footerPrivacy:'Privacy', footerTerms:'Termini e Condizioni'
+  }
+};
+
+function s(id, text){ var el=document.getElementById(id); if(el) el.textContent=text; }
+function setLang(l, btn){
+  if(!TR[l]) return;
+  lang=l;
+  document.documentElement.lang=l;
+  document.querySelectorAll('.lb').forEach(function(b){b.classList.remove('on');});
+  if(btn) btn.classList.add('on');
+  try{var u=new URL(window.location.href);u.searchParams.set('lang',l);history.replaceState({},'',u.toString());}catch(e){}
+  apply();
+}
+function apply(){
+  var t=TR[lang];
+  document.title='About Us — YouSudoku';
+  s('ui-subtitle',t.subtitle); s('ui-play-btn',t.play);
+  s('hero-title',t.heroTitle); s('hero-intro',t.heroIntro);
+  s('s1-title',t.s1Title); s('s1-p1',t.s1p1); s('s1-p2',t.s1p2);
+  s('s2-title',t.s2Title); s('s2-p1',t.s2p1); s('s2-p2',t.s2p2);
+  s('s3-title',t.s3Title);
+  s('v1-title',t.v1Title); s('v1-text',t.v1Text);
+  s('v2-title',t.v2Title); s('v2-text',t.v2Text);
+  s('v3-title',t.v3Title); s('v3-text',t.v3Text);
+  s('v4-title',t.v4Title); s('v4-text',t.v4Text);
+  s('s4-title',t.s4Title); s('s4-p1',t.s4p1); s('s4-p2',t.s4p2);
+  s('footer-game',t.footerGame); s('footer-about',t.footerAbout);
+  s('footer-privacy',t.footerPrivacy); s('footer-terms',t.footerTerms);
+}
+function boot(){
+  var p=new URLSearchParams(window.location.search).get('lang');
+  if(p&&TR[p]) lang=p;
+  else { var n=(navigator.language||'en').split('-')[0]; if(TR[n]) lang=n; }
+  document.querySelectorAll('.lb').forEach(function(b){
+    if(b.getAttribute('onclick')==="setLang('"+lang+"',this)") b.classList.add('on');
+    else b.classList.remove('on');
+  });
+  apply();
+}
+boot();
+</script>
+</body>
+</html>
